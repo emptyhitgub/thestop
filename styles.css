@@ -1,0 +1,100 @@
+body {
+  font-family: 'Calibri', sans-serif;
+  background-color: #FFFFFF;
+  color: #1E2541;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.logo {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1E2541;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #7B95FF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.timer span {
+  margin: 0 0.5rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#lap-list {
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-color 1s;
+  z-index: -1;
+}
+
+.btn.stop {
+  background-color: #F17137;
+}
+
+#btn-blind {
+  background-color: #DDE3FF;
+  color: #1E2541;
+}
+
+#btn-blind.on {
+  background-color: #2C439F;
+  color: #ffffff;
+}
